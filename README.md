@@ -9,6 +9,8 @@
 
 - ACLARACION: NO TIENE EN CUENTA IMPUESTOS DE ARGENTINA, ES PRECIO "OFICIAL" xD
 
+- Esta APP utiliza la API https://www.exchangerate-api.com/ *utilizar con cuidado porque solo tiene 1500 usos*
+
 
 
 ![alt text](src/img/asd.jpg)
