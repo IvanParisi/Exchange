@@ -6,20 +6,19 @@ import React from 'react';
 export const Calculo = ({number,coinP,coinS}) => 
 {
  
-  const [status, setStatus] = React.useState("idle");
+
   const [coinPrice, setCoinPrice] = React.useState();
 
     const history = useHistory();
 
 
     React.useEffect(() => {
-      setStatus("loading");
       fetch(`https://v6.exchangerate-api.com/v6/a97b187e9fac28de65b6a72c/pair/${coinP}/${coinS}`)
-        .then((response) => response.json().then((data) => setCoinPrice(data))).finally(setStatus("idle"))
+        .then((response) => response.json().then((data) => setCoinPrice(data)))
 
     },);
 
-    if (status === "idle") {
+   
     return (
     <Home>
         <Wrapper>
@@ -39,15 +38,7 @@ export const Calculo = ({number,coinP,coinS}) =>
         <Button onClick={() => history.push("./")}>Volver al Home</Button>
         </WrapperHelp>
       </Home>);
-}else if (status === "loading") 
-{
-  return (
-    <Home>
-  <Wrapper>
-    <h1>"Cargando..."</h1>
-  </Wrapper>
-    </Home>);
-}}
+}
 
 const WrapperHelp =  styled.div`
   margin-top:  40px;
