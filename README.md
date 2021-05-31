@@ -13,4 +13,3 @@
 
 ![alt text](src/img/asd.jpg)
 
-# Ahorcado
