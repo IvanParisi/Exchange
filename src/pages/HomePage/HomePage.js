@@ -45,7 +45,7 @@ export const HomePage = ({setNumber, setCoinP, setCoinS}) =>
 
         <WrapperExch>
         <InputNumber
-         placeholder="Ingresa el moto"
+         placeholder="Ingresa el monto"
          value={input}
          onChange={handleInputNChange}
         />
